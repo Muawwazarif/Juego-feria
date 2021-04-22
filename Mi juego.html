@@ -1,0 +1,166 @@
+<html>
+<head>
+<title>INICIO</title>
+<h1><color="blue"><p align="center">Viaja en esta ciudad de 4ta dimension , se mueve con w, s, d, a</p align="center"></color:"blue"></h1>
+<style>
+body{  background-color:  red; color: white;}
+#cuadrado{  width:1400px; height:1000px; overflow:hidden; }
+#PERSONALMapa{   position: relative; left : -1000px; top: 1800 px; }
+#coche{ position: absolute; left: 1050px; top: 740px; }
+#cuadrito{position: absolute; left: 730px; top: 70px; }
+#rojo{position:absolute; left: 455px; top: 70px; }
+#azul{position:absolute; left: 205px; top: 210px; }
+#verde{position: absolute; left: 205px; top: 450px;}
+#man{  position: absolute;  left : 2050px ; top: 250px; }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script
+</head>
+<body>
+<div id="cuadrado"><div id="PERSONALMapa"><img src= "PERSONALMapa.jpg"></div</div>
+<div id="man"><img src="man.png"></div>
+<div id="cuadrito"><img src="cuadrito.jpg"></div>
+<div id="coche"><img src="coche.png"></div>
+<div id="rojo"><img src="rojo.jpg"></div>
+<div id="azul"><img src="azul.png"></div>
+<div id="verde"><img src="verde.jpg"></div>
+<div id="datos"></div>
+<div class="Ateam">
+                  <img src="verde.jpg"  alt="" >
+                  <div class"text"></div>
+                      <a href=" https://escuelajustosierra8.wixsite.com/my-site/pagina-de-entrada-comunidad-4" ><p align: "center"><p>Teletransportarse, comunidad 4</p></p align: :"center"</a>
+                  </div>
+<style>
+ .Ateam {
+       position: absolute ;
+       display: inline-block ;
+       top: 450px ;
+       left:205px ; 
+       
+      align-items: center
+            }
+       .text {
+           position: absolute ;
+           teansform: translate(-50%, -50% ) ;
+           text-align: center ;
+              .href {
+                color:F35D3D ;
+                text-align: center ;
+                       }
+                 }
+</style>
+<div class="Bteam">
+                  <img src="azul.png"  alt="" >
+                  <div class"text"></div>
+                      <a href=" https://escuelajustosierra8.wixsite.com/my-site/pagina-de-entrada-comunidad-3" ><p align: "center"><p>Teletransportarse, comunidad 3</p></p align: :"center"</a>
+                  </div>
+<style>
+ .Bteam {
+       position: absolute ;
+       display: inline-block ;
+       top: 210px ;
+       left:205px ; 
+       
+      align-items: center
+            }
+       .text {
+           position: absolute ;
+           teansform: translate(-50%, -50% ) ;
+           text-align: center ;
+              .href {
+                color:F35D3D ;
+                text-align: center ;
+                       }
+                 }
+</style>
+<div class="Cteam">
+                  <img src="rojo.jpg"  alt="" >
+                  <div class"text"></div>
+                      <a href=" https://escuelajustosierra8.wixsite.com/my-site/pagina-de-entrada-comunidad-2" ><p align: "center"><p>Teletransportarse, comunidad 2</p></p align: :"center"</a>
+                  </div>
+<style>
+ .Cteam {
+       position: absolute ;
+       display: inline-block ;
+       top: 70px ;
+       left:455px ; 
+       
+      align-items: center
+            }
+       .text {
+           position: absolute ;
+           teansform: translate(-50%, -50% ) ;
+           text-align: center ;
+              .href {
+                color:F35D3D ;
+                text-align: center ;
+                       }
+                 }
+</style>
+<div class="Dteam">
+                  <img src="cuadrito.png"  alt="" >
+                  <div class"text"></div>
+                      <a href=" https://escuelajustosierra8.wixsite.com/my-site/pagina-de-entrada-comunidad-1" ><p align: "center"><p>Teletransportarse, comunidad 1</p></p align: :"center"</a>
+                  </div>
+<style>
+ .Dteam {
+       position: absolute ;
+       display: inline-block ;
+       top:70px ;
+       left:730px ; 
+       
+      align-items: center
+            }
+       .text {
+           position: absolute ;
+           teansform: translate(-50%, -50% ) ;
+           text-align: center ;
+              .href {
+                color:F35D3D ;
+                text-align: center ;
+                       }
+                 }
+</style>
+</body>
+<script>
+$(document).keypress(function( event )  {
+                  switch(event.which)
+                  {
+                          case 119: // W
+                                     $("#datos").text("arriba");
+                                     $( "#man" ).animate({ "top":  "-=100px" }, "slow" );
+                                     $( "#PERSONALMapa" ).animate({ "top":  "+=100px" }, "slow" );
+                                     $( "#Ateam" ).animate({ "top":  "+=100px" }, "slow" )
+                                     $( "#coche" ).animate({ "left":  "+=60px" }, "slow" );
+
+                          break;
+                          case 115: // S
+                                     $("#datos").text("abajo");
+                                     $( "#man" ).animate({ "top":  "+=100px" }, "slow" );
+                                     $( "#PERSONALMapa" ).animate({ "top":  "-=100px" }, "slow" );
+                                     $( "#Ateam" ).animate({ "top":  "-=100px" }, "slow" );
+                                     $( "#coche" ).animate({ "left":  "-=60px" }, "slow" );
+
+                          break;
+                          case 97: // A
+                                     $("#datos").text("izquierda");
+                                     $( "#man" ).animate({ "left": "-=100px" }, "slow" );
+                                     $( "#PERSONALMapa" ).animate({ "left":  "+=100px" }, "slow" );
+                                     $( "#Ateam" ).animate({ "left":  "+=100px" }, "slow" );
+                                     $( "#coche" ).animate({ "left":  "-=60px" }, "slow" );
+
+                          break;
+                          case 100: // D
+                                     $("#datos").text("derecha");
+                                     $( "#man" ).animate({ "left": "+=100px" }, "slow" );
+                                     $( "#PERSONALMapa" ).animate({ "left":  "-=100px" }, "slow" );
+                                     $( "#Ateam" ).animate({ "left":  "-=100px" }, "slow" );
+                                     $( "#coche" ).animate({ "left":  "+=60px" }, "slow" );
+
+                                     
+                          break;
+                  }
+            //$("#datos"). text("tecla:" +event.which);
+     });
+</script>
+</html>
+
